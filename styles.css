@@ -121,7 +121,7 @@ body {
   @media screen and (max-width: 1200px) {
     
     .container {
-      max-width: 50%;
+      max-width: 250px;
     }
     
     .joke-card {
