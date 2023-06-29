@@ -1,0 +1,218 @@
+body {
+    background-color: #f9f9f9;
+    
+        background-image: url('https://i.pinimg.com/originals/7c/1a/60/7c1a60cb695b4d8465832ee611c08f5c.png');
+        background-repeat: no-repeat;
+        background-size: 60% 100%;
+        background-position: center;
+        margin: 0;
+        padding: 0;
+        height: 100vh;
+      
+  }
+  
+  
+.container {
+    max-width: 550px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center;
+    color: rgb(12, 12, 12);
+  }
+  
+  h1 {
+    font-size: 25px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .joke-card {
+    opacity: 0.9;
+    margin-top: 57px;
+    margin-left: -34px;
+    margin-bottom: 20px;
+    padding: 20px;
+    background-color: #84d0ee;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .joke-card::before {
+    content: "🤣";
+    font-size: 100px;
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    z-index: -1;
+  }
+  
+  .joke-card::after {
+    content: "🤣";
+    font-size: 100px;
+    opacity: 0.2;
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    z-index: -1;
+  }
+  
+  
+  button {
+    padding: 10px 20px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    color: #84d0ee;
+    border: 1px solid #ccc;
+    background-color: #f8dc6b;
+  }
+
+  button:hover {
+    background-color: #fbfbfc;
+    color: #fdcd0a;
+    border: 1px solid #d8db0f;
+  }
+  
+  .joke-details {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+  }
+  
+  .joke-setup,
+  .joke-delivery {
+    font-weight: bold;
+    font-size: 20px;
+    flex-basis: 50%;
+  }
+
+  .joke-text {
+    width: 100%;
+    justify-content: space-between;
+    display: flex;
+    font-size: 20px;
+    
+    font-weight: bold;
+  }
+  
+  .joke-setup-text {
+    margin: 0;
+    float: left;
+    color: rgb(253, 250, 250);
+    font-style: italic;
+    text-align: left;
+    flex-basis: 50%;
+    width: 50%;
+  }
+  .joke-delivery-text {
+    color: rgb(241, 245, 8);
+    font-style: italic;
+    float: right;
+    flex-basis: 50%;
+    width: 50%;
+  }
+  
+  #joke-error {
+    color: red;
+  }
+  
+  @media screen and (max-width: 1200px) {
+    
+    .container {
+      max-width: 100%;
+    }
+    
+    .joke-card {
+      margin: 20px 0;
+    }
+    
+    .joke-card::before,
+    .joke-card::after {
+      display: none;
+    }
+    
+    .joke-setup,
+    .joke-delivery,
+    .joke-setup-text,
+    .joke-delivery-text {
+      font-size: 16px;
+    }
+
+    body {
+        background-color: #f9f9f9;
+        
+            background-image: url('https://i.pinimg.com/originals/7c/1a/60/7c1a60cb695b4d8465832ee611c08f5c.png');
+            background-repeat: no-repeat;
+            background-size: 100% 100%;
+            background-position: center;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+          
+      }
+      
+      
+    .container {
+        max-width: 550px;
+        margin: 0 auto;
+        padding: 20px;
+        text-align: center;
+      }
+      
+      h1 {
+        font-size: 25px;
+        margin-top: 20px;
+        margin-bottom: 20px;
+      }
+      
+      
+      button {
+        padding: 10px 20px;
+        font-size: 16px;
+        margin-bottom: 10px;
+        border-radius: 5px;
+        border: 1px solid #ccc;
+        background-color: #c9c634;
+      }
+    
+      button:hover {
+        background-color: #fbfbfc;
+        color: #288bdd;
+        border: 1px solid #d8db0f;
+      }
+      
+      .joke-details {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+      }
+    
+      .joke-text {
+        width: 100%;
+        justify-content: space-between;
+        display: flex;
+        font-size: 20px;
+      }
+      
+      .joke-setup-text {
+        margin: 0;
+        float: left;
+        font-style: italic;
+        text-align: left;
+        flex-basis: 50%;
+        width: 50%;
+      }
+      .joke-delivery-text {
+        
+        font-style: italic;
+        float: right;
+        flex-basis: 50%;
+        width: 50%;
+      }
+      
+      #joke-error {
+        color: red;
+      }
+  } 
